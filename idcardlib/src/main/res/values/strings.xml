@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IdCardLib</string>
+    <string name="idcardscan_tip_res">请将证件置于此处</string>
+    <string name="parsing">识别中&#8230;</string>
+    <string name="rationale_ask_again">没有权限，不能正常工作！</string>
+    <string name="rationale_camera">没有相机权限，不能正常工作！</string>
+    <string name="ocr_unauthorized">未授权</string>
+    <string name="parse_error">识别错误</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+</resources>

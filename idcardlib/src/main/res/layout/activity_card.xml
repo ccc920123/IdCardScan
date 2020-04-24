@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/camera_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+    <ImageButton
+        android:id="@+id/bt_cancel"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cameaback_selector" />
+
+
+    <ImageButton
+        android:id="@+id/bt_flash"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/cameaback_selector"
+        android:visibility="gone" />
+
+<!--    android:src="@drawable/ic_scan_select_image"-->
+        <ImageButton
+            android:id="@+id/selectImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:background="?android:attr/selectableItemBackground"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/idcardscan_tip_res"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+
+    <com.msd.ocr.idcard.id.ViewfinderView
+        android:id="@+id/camera_finderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

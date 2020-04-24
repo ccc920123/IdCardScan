@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cdjysd.idcardlib">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE "/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE "/>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:name="com.CardApplication"
+        >
+
+        <activity android:name=".ui.IDCActivity"></activity>
+        <activity android:name="com.msd.ocr.idcard.id.DIVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+                <action android:name="com.msd.ocr.idcard.DIVideoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.msd.ocr.idcard.id.ICVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+             >
+            <intent-filter>
+                <action android:name="com.msd.ocr.idcard.ICVideo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
